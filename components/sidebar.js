@@ -1,3 +1,4 @@
+import React from 'react';
 export default function Sidebar(props) {
   return (
     <aside class="sidebar sidebar--wrapper sidebar--fixed-left sidebar--full-height sidebar--250">

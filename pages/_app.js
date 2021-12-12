@@ -1,3 +1,5 @@
+import React from 'react';
+
 import '../public/css/app.css'
 
 function MyApp({ Component, pageProps }) {

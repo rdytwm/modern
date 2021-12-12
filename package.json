@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",
     "watch": "mix watch",
@@ -18,9 +18,11 @@
     "react-dom": "17.0.2"
   },
   "devDependencies": {
+    "@babel/preset-react": "^7.16.0",
+    "babel-plugin-react-html-attrs": "^3.0.5",
+    "cross-env": "^7.0.3",
     "eslint": "8.4.1",
     "eslint-config-next": "12.0.7",
-    "cross-env": "^7.0.3",
     "laravel-mix": "^6.0.39",
     "lodash": "^4.17.21",
     "resolve-url-loader": "^4.0.0",
