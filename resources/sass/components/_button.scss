@@ -1,0 +1,105 @@
+.button {
+  border: 0;
+  padding: 4px 15px;
+  margin: 0;
+  border-radius: 5px;
+
+  // sizing
+  &--xl {
+    padding: 5px 22px;
+    font-size: 24px;
+  }
+
+  &--lg {
+    padding: 5px 20px;
+    font-size: 20px;
+  }
+
+  &--sm {
+    padding: 5px 10px;
+    font-size: 18px;
+  }
+
+  &--rounded {
+    border-radius: 25px;
+  }
+
+  // Color
+  &--primary {
+    color: $light;
+    background-color: $primary;
+    border: 1px solid $primary;
+  }
+
+  &--info {
+    color: $light;
+    background-color: $info;
+    border: 1px solid $info;
+  }
+
+  &--danger {
+    color: $light;
+    background-color: $danger;
+    border: 1px solid $danger;
+  }
+
+  &--warning {
+    color: $light;
+    background-color: $warning;
+    border: 1px solid $warning;
+  }
+
+  // outline
+  &-outline {
+    border-width: 1px;
+    border-style: solid;
+    border-color: $gray-300;
+    background-color: transparent;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      color: $dark;
+      background-color: $gray-300;
+    }
+
+    &--primary {
+      color: $primary;
+      border-color: $primary;
+
+      &:hover {
+        color: $light;
+        background-color: $primary;
+      }
+    }
+
+    &--info {
+      color: $info;
+      border-color: $info;
+
+      &:hover {
+        color: $light;
+        background-color: $info;
+      }
+    }
+
+    &--danger {
+      color: $danger;
+      border-color: $danger;
+
+      &:hover {
+        color: $light;
+        background-color: $danger;
+      }
+    }
+
+    &--warning {
+      color: $warning;
+      border-color: $warning;
+
+      &:hover {
+        color: $light;
+        background-color: $warning;
+      }
+    }
+  }
+}
