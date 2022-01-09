@@ -1,0 +1,21 @@
+.rounded-circle {
+  border-radius: 100% !important;
+}
+
+@for $var from 0 through 40 {
+  .rounded-#{$var} {
+    border-radius: #{$var}px !important;
+  }
+  .rounded-top-left-#{$var} {
+    border-top-left-radius: #{$var}px !important;
+  }
+  .rounded-top-right-#{$var} {
+    border-top-right-radius: #{$var}px !important;
+  }
+  .rounded-bottom-left-#{$var} {
+    border-bottom-left-radius: #{$var}px !important;
+  }
+  .rounded-bottom-right-#{$var} {
+    border-bottom-right-radius: #{$var}px !important;
+  }
+}

@@ -1,7 +1,45 @@
 .push {
-  &--left {
+  &-left {
     &-250 {
       padding-left: 250px;
+    }
+
+    &-240 {
+      padding-left: 240px;
+    }
+
+    &-230 {
+      padding-left: 230px;
+    }
+
+    &-220 {
+      padding-left: 220px;
+    }
+
+    &-200 {
+      padding-left: 200px;
+    }
+  }
+
+  &-right {
+    &-250 {
+      padding-right: 250px;
+    }
+
+    &-240 {
+      padding-right: 240px;
+    }
+
+    &-230 {
+      padding-right: 230px;
+    }
+
+    &-220 {
+      padding-right: 220px;
+    }
+
+    &-200 {
+      padding-right: 200px;
     }
   }
 }

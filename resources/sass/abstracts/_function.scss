@@ -40,7 +40,7 @@
 // stylelint-disable scss/dollar-variable-pattern
 @function rgba-css-var($identifier, $target) {
   @if $identifier == "body" and $target == "bg" {
-    @return rgba(var(--#{$variable-prefix}#{$identifier}-bg-rgb), var(--#{$variable-prefix}#{$target}-opacity));
+    @return rgba(var(--#{$variable-prefix}#{$identifier}-background-color-rgb), var(--#{$variable-prefix}#{$target}-opacity));
   } @if $identifier == "body" and $target == "text" {
     @return rgba(var(--#{$variable-prefix}#{$identifier}-color-rgb), var(--#{$variable-prefix}#{$target}-opacity));
   } @else {

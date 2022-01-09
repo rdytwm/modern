@@ -1,15 +1,29 @@
-.d-flex {
-  display: flex;
+.display-flex {
+  display: flex !important;
 }
 
-.justify-content--between {
+.display-block {
+  display: block !important;
+}
+
+.display-inline-block {
+  display: inline-block;
+}
+
+.justify-content-between {
   justify-content: space-between;
 }
 
-.align-items--center {
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
   align-items: center;
 }
 
-.flex-space--10 {
-  gap: 10px;
+@for $var from 0 through 40 {
+  .gap-#{$var} {
+    gap: #{$var}px !important;
+  }
 }

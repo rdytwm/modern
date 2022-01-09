@@ -1,49 +1,72 @@
 .button {
   border: 0;
-  padding: 4px 15px;
+  padding: 6px 10px;
   margin: 0;
-  border-radius: 5px;
+  // border-radius: 5px;
+  color: $secondary;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+
+  // text
+  &-text {
+    background-color: $transparent;
+  }
 
   // sizing
-  &--xl {
+  &-xl {
     padding: 5px 22px;
     font-size: 24px;
   }
 
-  &--lg {
+  &-lg {
     padding: 5px 20px;
     font-size: 20px;
   }
 
-  &--sm {
+  &-md {
     padding: 5px 10px;
     font-size: 18px;
   }
 
-  &--rounded {
+  &-rounded {
     border-radius: 25px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   // Color
-  &--primary {
+  &-dark {
+    color: $light;
+    background-color: $dark;
+    border: 1px solid $dark;
+  }
+
+  &-light {
+    color: $gray-600;
+    background-color: $light;
+    border: 1px solid $light;
+  }
+
+  &-primary {
     color: $light;
     background-color: $primary;
     border: 1px solid $primary;
   }
 
-  &--info {
+  &-info {
     color: $light;
     background-color: $info;
     border: 1px solid $info;
   }
 
-  &--danger {
+  &-danger {
     color: $light;
     background-color: $danger;
     border: 1px solid $danger;
   }
 
-  &--warning {
+  &-warning {
     color: $light;
     background-color: $warning;
     border: 1px solid $warning;
@@ -55,24 +78,48 @@
     border-style: solid;
     border-color: $gray-300;
     background-color: transparent;
-    transition: 0.2s ease-in-out;
+    transition: 0.1s ease-in-out;
+    color: $secondary;
 
     &:hover {
       color: $dark;
       background-color: $gray-300;
     }
 
-    &--primary {
+    &-primary {
+      border-width: 1px;
+      border-style: solid;
+      background-color: #f7faff;
+      transition: 0.1s ease-in-out;
       color: $primary;
-      border-color: $primary;
+      border-color: $blue-100;
 
       &:hover {
         color: $light;
-        background-color: $primary;
+        background-color: $blue-500;
+        border-color: $blue-500;
       }
     }
 
-    &--info {
+    &-dark {
+      border-width: 1px;
+      border-style: solid;
+      background-color: transparent;
+      transition: 0.1s ease-in-out;
+      color: $dark;
+      border-color: $dark;
+
+      &:hover {
+        color: $light;
+        background-color: $dark;
+      }
+    }
+
+    &-info {
+      border-width: 1px;
+      border-style: solid;
+      background-color: transparent;
+      transition: 0.1s ease-in-out;
       color: $info;
       border-color: $info;
 
@@ -82,17 +129,26 @@
       }
     }
 
-    &--danger {
-      color: $danger;
-      border-color: $danger;
+    &-danger {
+      border-width: 1px;
+      border-style: solid;
+      background-color: #fff7f7;
+      transition: 0.1s ease-in-out;
+      color: $red-600;
+      border-color: $red-200;
 
       &:hover {
         color: $light;
-        background-color: $danger;
+        border-color: $red-400;
+        background-color: $red-400;
       }
     }
 
-    &--warning {
+    &-warning {
+      border-width: 1px;
+      border-style: solid;
+      background-color: transparent;
+      transition: 0.1s ease-in-out;
       color: $warning;
       border-color: $warning;
 
@@ -100,6 +156,16 @@
         color: $light;
         background-color: $warning;
       }
+    }
+  }
+
+  // group
+  &-group {
+    display: flex;
+    flex-wrap: nowrap;
+
+    flex>* {
+      display: block;
     }
   }
 }

@@ -3,19 +3,19 @@
   overflow: hidden;
 
   // feature-color
-  &--primary {
+  &-primary {
     background-color: $primary;
   }
 
-  &--secondary {
+  &-secondary {
     background-color: $secondary;
   }
 
-  &--info {
+  &-info {
     background-color: $info;
   }
-  
-  &__image {
+
+  &-image {
     width: 100%;
     box-sizing: border-box;
 
@@ -24,14 +24,14 @@
     }
   }
 
-  &__preview {
+  &-preview {
     padding-bottom: 70%;
     background-color: $info;
     position: relative;
     background-size: cover;
     background-position: 0 0;
 
-    &__feature {
+    &-feature {
       position: absolute;
       left: 0;
       right: 0;
@@ -40,60 +40,66 @@
       padding: 10px 15px;
       gap: 10px;
 
-      &--dark {
+      &-dark {
         color: $light;
         background-color: #000000a6;
       }
 
-      &--light {
+      &-light {
         color: $dark;
         background-color: #ffffffa6;
       }
 
-      &--top {
+      &-top {
         top: 0;
       }
-      
-      &--bottom {
+
+      &-bottom {
         bottom: 0;
       }
     }
   }
-  
-  &__title {
-    font: 20px;
+
+  &-title {
+    font-size: 20px;
     font-weight: bold;
     padding: 20px 20px 0 20px;
     margin-bottom: 0;
   }
 
-  &__body {
+  &-body {
     padding: 20px;
 
-    &__description {
+    &-description {
       margin: 0;
-      font-size: 15px;
+      font-size: 14px;
+      line-height: 22px;
+      color: $gray-600;
     }
+  }
+
+  &-footer {
+    padding-top: 20px;
   }
 }
 
 .mouse-over {
 
-  &--top {
+  &-top {
     transform: translateY(-100px);
   }
-  
+
   &:hover {
-    .mouse-over__display {
+    .mouse-over-display {
       opacity: 1;
     }
 
-    .mouse-over--top {
+    .mouse-over-top {
       transform: translateY(0);
     }
   }
-  
-  &__display {
+
+  &-display {
     opacity: 0;
     transition: 0.2s ease-in-out;
   }

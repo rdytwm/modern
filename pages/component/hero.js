@@ -8,9 +8,9 @@ export default function Card() {
         <div class="row">
           <div class="col-12">
             <h1>Hero</h1>
-            <div class="hero">
-              <h2 class="hero__title">We Am Hero</h2>
-              <h5 class="hero__slug">Slug Hero</h5>
+            <div class="hero background-color-gray200">
+              <h2 class="hero-title">We Am Hero</h2>
+              <h5 class="hero-slug">Slug Hero</h5>
             </div>
           </div>
         </div>

@@ -1,0 +1,20 @@
+@for $var from 0 through 100 {
+  .height-#{$var}px {
+    height: #{$var}px !important;
+  }
+  .height-#{$var}rem {
+    height: #{$var}rem !important;
+  }
+  .height-#{$var}per {
+    height: #{$var}'%' !important;
+  }
+  .width-#{$var}px {
+    width: #{$var}px !important;
+  }
+  .width-#{$var}rem {
+    width: #{$var}rem !important;
+  }
+  // .width-#{$var}per {
+  //   width: #{$var} + '%' !important;
+  // }
+}

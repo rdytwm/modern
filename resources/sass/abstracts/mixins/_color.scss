@@ -1,0 +1,120 @@
+@each $key, $value in $colors {
+  .background-color-#{$key} {
+    background-color: $value !important;
+  }
+  .color-#{$key} {
+    color: $value !important;
+  }
+}
+
+@each $key, $value in $theme-colors {
+  .background-color-#{$key} {
+    background-color: $value !important;
+  }
+  .color-#{$key} {
+    color: $value !important;
+  }
+}
+
+@each $key, $value in $blues {
+  .background-color-#{$key} {
+    background-color: $value !important;
+  }
+  .color-#{$key} {
+    color: $value !important;
+  }
+}
+
+@each $key, $value in $indigos {
+  .background-color-#{$key} {
+    background-color: $value !important;
+  }
+  .color-#{$key} {
+    color: $value !important;
+  }
+}
+
+@each $key, $value in $purples {
+  .background-color-#{$key} {
+    background-color: $value !important;
+  }
+  .color-#{$key} {
+    color: $value !important;
+  }
+}
+
+@each $key, $value in $pinks {
+  .background-color-#{$key} {
+    background-color: $value !important;
+  }
+  .color-#{$key} {
+    color: $value !important;
+  }
+}
+
+@each $key, $value in $reds {
+  .background-color-#{$key} {
+    background-color: $value !important;
+  }
+  .color-#{$key} {
+    color: $value !important;
+  }
+}
+
+@each $key, $value in $oranges {
+  .background-color-#{$key} {
+    background-color: $value !important;
+  }
+  .color-#{$key} {
+    color: $value !important;
+  }
+}
+
+@each $key, $value in $yellows {
+  .background-color-#{$key} {
+    background-color: $value !important;
+  }
+  .color-#{$key} {
+    color: $value !important;
+  }
+}
+
+@each $key, $value in $greens {
+  .background-color-#{$key} {
+    background-color: $value !important;
+  }
+  .color-#{$key} {
+    color: $value !important;
+  }
+}
+
+@each $key, $value in $teals {
+  .background-color-#{$key} {
+    background-color: $value !important;
+  }
+  .color-#{$key} {
+    color: $value !important;
+  }
+}
+
+@each $key, $value in $cyans {
+  .background-color-#{$key} {
+    background-color: $value !important;
+  }
+  .color-#{$key} {
+    color: $value !important;
+  }
+}
+
+@each $key, $value in $grays {
+  .background-color-#{$key} {
+    background-color: $value !important;
+  }
+  .color-#{$key} {
+    color: $value !important;
+  }
+}
+
+.background-color-white {
+  background-color: #fff !important;
+}

@@ -15,7 +15,7 @@ export default function Layout(props) {
       </Head>
       <Navbar/>
       <Sidebar/>
-      <main class="push--left-250">
+      <main class="push-left-250">
         {props.children}
       </main>
       <Footer/>

@@ -1,0 +1,23 @@
+$class-name: margin !default;
+
+.margin-auto {
+  margin: auto;
+}
+
+@for $var from 0 through 40 {
+  .#{$class-name}-#{$var} {
+    margin: #{$var}px !important;
+  }
+  .#{$class-name}-top-#{$var} {
+    margin-top: #{$var}px !important;
+  }
+  .#{$class-name}-right-#{$var} {
+    margin-right: #{$var}px !important;
+  }
+  .#{$class-name}-bottom-#{$var} {
+    margin-bottom: #{$var}px !important;
+  }
+  .#{$class-name}-left-#{$var} {
+    margin-left: #{$var}px !important;
+  }
+}

@@ -4,14 +4,15 @@
   justify-content: space-between;
   // padding: 15px 0;
   background-color: white;
+  z-index: 1200;
 
   font-family: 'Nunito', sans-serif;
 
-  &--lighten {
+  &-lighten {
     background-color: $gray-100;
   }
 
-  &--dark {
+  &-dark {
     background-color: $dark;
   }
 
@@ -23,18 +24,18 @@
     align-items: center;
     justify-content: flex-start;
     
-    &--equal {
+    &-equal {
       justify-content: space-between;
     }
 
-    &--full {
+    &-full {
       padding-left: 25px;
       padding-right: 25px;
       max-width: 100%;
     }
   }
 
-  &__logo {
+  &-logo {
     display: flex;
     gap: 5px;
     flex-wrap: nowrap;
@@ -46,14 +47,14 @@
     }
   }
 
-  &__menu {
+  &-menu {
     list-style: none;
     display: flex;
     margin: 0;
     gap: 10px;
     align-items: center;
 
-    &__link {
+    &-link {
       display: flex;
       padding: 20px 0;
       color: $dark;
@@ -67,7 +68,7 @@
     }
   }
   
-  &__content {
+  &-content {
 
     > button {
       margin-right: 10px;

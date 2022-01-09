@@ -1,0 +1,39 @@
+.font-family-lato {
+  font-family: $font-family-lato !important;
+}
+.font-family-montserrat {
+  font-family: $font-family-montserrat !important;
+}
+.font-family-noto {
+  font-family: $font-family-noto !important;
+}
+.font-family-poppins {
+  font-family: $font-family-poppins !important;
+}
+.font-family-roboto {
+  font-family: $font-family-roboto !important;
+}
+
+@for $var from 10 through 120 {
+  .font-size-#{$var} {
+    font-size: #{$var}px !important;
+  }
+}
+
+.font-weight-light {
+  font-weight: lighter !important;
+}
+
+.font-weight-bold {
+  font-weight: bold !important;
+}
+
+$x: 1;
+@while $x < 10 
+{
+  .font-weight-#{$x * 100}
+  {
+      font-weight: #{$x * 100} !important;
+  }
+  $x: $x + 1;
+}

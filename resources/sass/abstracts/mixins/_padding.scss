@@ -1,0 +1,19 @@
+$class-name: padding;
+
+@for $var from 0 through 40 {
+  .#{$class-name}-#{$var} {
+    padding: #{$var}px !important;
+  }
+  .#{$class-name}-top-#{$var} {
+    padding-top: #{$var}px !important;
+  }
+  .#{$class-name}-right-#{$var} {
+    padding-right: #{$var}px !important;
+  }
+  .#{$class-name}-bottom-#{$var} {
+    padding-bottom: #{$var}px !important;
+  }
+  .#{$class-name}-left-#{$var} {
+    padding-left: #{$var}px !important;
+  }
+}
